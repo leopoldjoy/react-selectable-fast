@@ -1,0 +1,7 @@
+example/bundle.js
+node_modules
+lib
+dist
+build
+DS_Store
+*.log

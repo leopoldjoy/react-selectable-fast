@@ -1,0 +1,63 @@
+{
+  "name": "react-selectable-fast",
+  "version": "0.1.6",
+  "description": "Enable other React components to be selectable by drawing a box with your mouse",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/valerybugakov/react-selectable-fast.git"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "example": "webpack-dev-server --config ./example/webpack.config.js --content-base example",
+    "watch": "node node_modules/webpack/bin/webpack --watch",
+    "build": "node node_modules/webpack/bin/webpack",
+    "dist": "NODE_ENV=production webpack -p --config webpack.production.config.js",
+    "prepublish": "babel ./src/ -d ./lib/"
+  },
+  "bugs": {
+    "url": "https://github.com/valerybugakov/react-selectable-fast/issues"
+  },
+  "keywords": [
+    "selectable",
+    "selection",
+    "mouse",
+    "fast",
+    "scrollable",
+    "performance",
+    "drag",
+    "touch",
+    "react"
+  ],
+  "author": "Valery Bugakov <skymk1@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.6.5",
+    "babel-core": "^6.4.5",
+    "babel-eslint": "^5.0.0",
+    "babel-loader": "^6.2.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "eslint": "^2.2.0",
+    "eslint-config-airbnb": "^6.0.2",
+    "eslint-plugin-babel": "^3.1.0",
+    "eslint-plugin-react": "^4.1.0",
+    "react": "^15.0.0-rc.1",
+    "react-dom": "^15.0.0-rc.1",
+    "webpack": "^1.12.11",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.7.4",
+    "autobind-decorator": "^1.3.3"
+  },
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "homepage": "https://github.com/valerybugakov/react-selectable-fast#readme",
+  "directories": {
+    "example": "example"
+  }
+}
